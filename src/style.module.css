@@ -1,0 +1,183 @@
+:root{
+    --colorMain : #98EECC;
+    --color2nd : #D0F5BE ;
+    --color3rd : #FBFFDC ;
+    --color4th : #A4907C ;
+    --colorFont : rgb(75, 75, 94) ;
+}
+
+@font-face {
+    font-family: "tiktak";
+    src: url(TIKTAK.otf);
+  }
+
+@font-face {
+font-family: "banana";
+src: url(Banana.ttf);
+}
+.wrapper{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.upperband {
+    width: 100% ;
+    height: 20px;
+}
+
+.header{
+    width: 100% ;
+    font-family: "tiktak";
+    background-color: var(--color2nd);
+    color : var(--colorFont) ;
+    text-align: center;
+    padding : 1rem 0 ;
+    /* padding: 1rem; */
+}
+
+.titre {
+    font-size: 4rem;
+}
+
+.texteTitre{
+    font-size: 1.5rem;
+    font-style: oblique;
+}
+
+nav{
+    position: sticky;
+    top: 0px ;
+    background-color: var(--color3rd) ;
+    color : var(--colorFont) ;
+    font-size: 2rem;
+    width: 100% ;
+    z-index: 2;
+}
+
+.liste{
+   
+    display: flex;
+    flex-direction: row;
+    padding: 0%;
+    margin: 0%;
+    border : dotted 2px var(--colorFont) ;
+}
+
+li{
+    /* margin: 1rem; */
+    padding: 1rem;
+    list-style: circle inside ;
+    text-decoration-line: underline;
+    color : var(--colorFont) ;
+}
+
+li:hover{
+cursor :pointer ;
+ }
+
+liclicked{
+    color : rgb(199, 41, 13) ;
+}
+body {
+    background-color: var(--color4th) ;
+    color :var(--color4th) ;
+    font-family: "banana";
+}
+
+.vitrine{
+    background-color: var(--colorMain) ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    top: 300px;
+    height: auto ;
+    width: 100%;
+    z-index: 1;
+}
+
+.animal{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: var(--color2nd);
+    justify-content: space-evenly;
+    border-radius: 5%;
+    width: 250px;
+    height: 300px;
+    align-items: center;
+    border: 5px solid pink ;
+    margin: 5px ;
+    box-shadow: rgba(0, 0, 0, 0.739) 1.95px 1.95px 2.6px;
+    
+}
+.animalH1{
+    position: absolute;
+    top :10px ;
+    margin: 20px;
+    font-size: 4rem;
+    text-shadow: 1px 1px 2px pink;
+    text-shadow: 2px 2px 2px rgba(186, 177, 177, 0.087);
+}
+
+.animalQuestionMark{
+    position: absolute;
+    top : 5px ;
+    right :5px ;
+    font-size: 1rem;
+    color: red;
+    border-radius: 25%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.animalPic{
+    position: relative;
+    top :15px ;
+    margin:  10px;
+    padding:  5px;
+    width: 120px;
+    height: auto;
+    border: 2px solid black ;
+    border-radius: 30%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.animalPrice {
+    position: absolute;
+    padding: 12px ;
+    /* margin: 12px; */
+    bottom :15px ;
+    right :5px ;
+    color: brown;
+    background-color: white;
+    font-size: rem;
+    border : 2px black dashed;
+    border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.animalDescriptionHidden {
+    display: none ;
+    
+}
+
+.animalDescriptionVisible{
+    display: flex;
+    text-align: center;
+    position: absolute;
+    /* visibility: visible ; */
+    padding: 2rem;
+    border : 2px solid black ;
+    background-color: antiquewhite;
+    font-size: 2rem;
+    color: crimson;
+    top : 20% ;
+    border-radius: 20%;
+    box-sizing :border-box ;
+    width: 100%;
+    height: auto;
+   
+    
+
+}
