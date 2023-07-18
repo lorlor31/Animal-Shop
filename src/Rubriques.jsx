@@ -1,15 +1,23 @@
 import { useState } from 'react'
 import styles from './style.module.css'
 
-export function Rubriques () {
-    
-    return (
-        <div>
-           
-
-        </div>
-    )
-}
 
 
+export let rubriques= [
+    {"nom" :"tous",
+    "titre" : "Tous" 
+    }
+    ,
+    {"nom" :"top",
+    "titre" : "Top" 
+    },
+    {"nom" :"petit",
+    "titre" : "Petit Budget" 
+    }
+    ,
+    {"nom" :"prixCroissant",
+    "titre" : "Prix Croissant" 
+    }
+
+]
 

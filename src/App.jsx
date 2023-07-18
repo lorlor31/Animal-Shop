@@ -4,6 +4,7 @@ import {UpperBand} from './UpperBand'
 import {Header} from './Header'
 import {Menu} from './Menu'
 import {Vitrine} from './Vitrine'
+import { rubriques } from './Rubriques'
 
 function App() {
   const [vitrineFilter,setVitrineFilter]=useState("tous")
@@ -11,7 +12,7 @@ function App() {
     <div className={styles.wrapper}>
      <UpperBand UpperBandColor="#98EECC"/>
      <Header/>
-     <Menu vitrineFilter={vitrineFilter} setVitrineFilter={setVitrineFilter}/>
+     <Menu rubriques={rubriques} vitrineFilter={vitrineFilter} setVitrineFilter={setVitrineFilter}/>
      <Vitrine vitrineFilter={vitrineFilter}/>
     </div>
   
